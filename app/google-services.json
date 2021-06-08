@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "668254821558",
+    "firebase_url": "https://musiclyrics1-61446-default-rtdb.firebaseio.com",
+    "project_id": "musiclyrics1-61446",
+    "storage_bucket": "musiclyrics1-61446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668254821558:android:a6f9d0c52bcbd574fcda17",
+        "android_client_info": {
+          "package_name": "com.example.musiclyrics2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668254821558-d2mgakutfbgvrktpmtdeq2470to1ufs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARA7j8nKh8P81At-ENAqqyKP7503go_H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668254821558-d2mgakutfbgvrktpmtdeq2470to1ufs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
