@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Пустое поле", Toast.LENGTH_SHORT).show();
         }
     }
+    //14.06
+
 }
 
 //    public void onClickEnter(View view) { //Кнопка входа
