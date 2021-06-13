@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void onClickSignUp(View View) {
         if(!TextUtils.isEmpty(edLogin.getText().toString()) && !TextUtils.isEmpty(edPassword.getText().toString())) {
-            mAuth.createUserWithEmailAndPassword(edLogin.getText().toString(),edLogin.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.createUserWithEmailAndPassword(edLogin.getText().toString(),edPassword.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
@@ -59,6 +59,19 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     public void onClickSignIn(View View) {
+        if(!TextUtils.isEmpty(edLogin.getText().toString()) && !TextUtils.isEmpty(edPassword.getText().toString())) {
+            mAuth.signInWithEmailAndPassword(edLogin.getText().toString(),edPassword.getText().toString()).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getApplicationContext(), "Пользователь вошел успешно", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Входа нет", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }); {
 
+            }
+        }
     }
 }
