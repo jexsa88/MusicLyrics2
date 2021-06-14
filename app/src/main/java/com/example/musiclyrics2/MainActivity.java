@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         String name = edName.getText().toString();
         String sec_name = edSecName.getText().toString();
         String email = edEmail.getText().toString();
-        User newUser = new User(id,name,sec_name,email);
-        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(sec_name) && !TextUtils.isEmpty(email)) { //Условие проверки пустых полей
+        User newUser = new User(name,sec_name);
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(sec_name)) { //Условие проверки пустых полей
 
             mDataBase.push().setValue(newUser);
             Toast.makeText(this, "Данные сохранены", Toast.LENGTH_SHORT).show();

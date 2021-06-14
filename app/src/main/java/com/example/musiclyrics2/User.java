@@ -6,10 +6,10 @@ public class User {
     public User() {
     }
 
-    public User(String id, String name, String sec_name, String email) {
-        this.id = id;
+    public User(String name, String sec_name) {
+//        this.id = id;
         this.name = name;
         this.sec_name = sec_name;
-        this.email = email;
+//        this.email = email;
     }
 }
